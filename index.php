@@ -34,7 +34,7 @@ function initialserEmployes(): array{
         ],
     ];
 
-    return $emlpyes
+    return $emlpyes;
 
 }
 
