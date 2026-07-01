@@ -40,10 +40,35 @@ function initialserEmployes(): array{
 
 initialserEmployes();
 
+//2
+
+function recuperEmployes(array $employes) : array{
+$departements = [];
+
+foreach( $employes as $employe ) {
+$nomdepartement = $employe[" departements"][" nom"];
+$ok =vrai;
+for( $index=0;$index <count [$departements];$index++){ 
+
+if($departements[ $index] [" nom"] === $nomDepartement){
+            $ok =false;
+        
+         }
+         }
 
 
+if(ok){
+    $departements[] = ["nom" => $nomdepartement,
+                        "code"=>$employe ["$departement"] ["code"]
+                        ];
+}
 
+}
 
+return $departements;
+}
+
+$dpartements =  recuperEmployes($employe)
 
 
 
